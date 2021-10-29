@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BDJardinPasitos" Class="PasitosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;Initial Catalog=BDJardinPasitos;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BDJardinPasitosConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TAlumno" Member="TAlumno">
+    <Type Name="TAlumno">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idResponsable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="apellido" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="foto" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tipo_Documento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nro_Documento" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_Nacimiento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="departamento" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="distrito" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="provincia" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="telefono" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="direccion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="genero" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tipoAlumno" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="alegias" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="TAlumno_TMatricula" Member="TMatricula" ThisKey="id" OtherKey="idAlumno" Type="TMatricula" />
+      <Association Name="TipoAlumno_TAlumno" Member="TipoAlumno1" ThisKey="tipoAlumno" OtherKey="id" Type="TipoAlumno" IsForeignKey="true" />
+      <Association Name="TResponsable_TAlumno" Member="TResponsable" ThisKey="idResponsable" OtherKey="id" Type="TResponsable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TAula" Member="TAula">
+    <Type Name="TAula">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="grado" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="seccion" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="capacidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idDocente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="TAula_TMatricula" Member="TMatricula" ThisKey="id" OtherKey="idAula" Type="TMatricula" />
+      <Association Name="TPersonal_TAula" Member="TPersonal" ThisKey="idDocente" OtherKey="id" Type="TPersonal" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TInstitucionEducativa" Member="TInstitucionEducativa">
+    <Type Name="TInstitucionEducativa">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ruc" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="codigoIE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="directora" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="TInstitucionEducativa_TPersonal" Member="TPersonal" ThisKey="id" OtherKey="institucioneducativa" Type="TPersonal" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoAlumno" Member="TipoAlumno">
+    <Type Name="TipoAlumno">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="TipoAlumno_TAlumno" Member="TAlumno" ThisKey="id" OtherKey="tipoAlumno" Type="TAlumno" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoDocumento" Member="TipoDocumento">
+    <Type Name="TipoDocumento">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="TipoDocumento_TPersonal" Member="TPersonal" ThisKey="id" OtherKey="tipoDocumento" Type="TPersonal" />
+      <Association Name="TipoDocumento_TResponsable" Member="TResponsable" ThisKey="id" OtherKey="tipoDocumento" Type="TResponsable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoPersona" Member="TipoPersona">
+    <Type Name="TipoPersona">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="TipoPersona_TResponsable" Member="TResponsable" ThisKey="id" OtherKey="tipoPersona" Type="TResponsable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoPersonal" Member="TipoPersonal">
+    <Type Name="TipoPersonal">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="TipoPersonal_TPersonal" Member="TPersonal" ThisKey="id" OtherKey="tipoPersonal" Type="TPersonal" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TMatricula" Member="TMatricula">
+    <Type Name="TMatricula">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idAlumno" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idUsuRes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idAula" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codModular" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="idpago" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="TAlumno_TMatricula" Member="TAlumno" ThisKey="idAlumno" OtherKey="id" Type="TAlumno" IsForeignKey="true" />
+      <Association Name="TAula_TMatricula" Member="TAula" ThisKey="idAula" OtherKey="id" Type="TAula" IsForeignKey="true" />
+      <Association Name="TPago_TMatricula" Member="TPago" ThisKey="idpago" OtherKey="id" Type="TPago" IsForeignKey="true" />
+      <Association Name="TUsuario_TMatricula" Member="TUsuario" ThisKey="idUsuRes" OtherKey="id" Type="TUsuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TMensualidad" Member="TMensualidad">
+    <Type Name="TMensualidad">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombreMes" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="monto" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="idPago" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="TPago_TMensualidad" Member="TPago" ThisKey="idPago" OtherKey="id" Type="TPago" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TPago" Member="TPago">
+    <Type Name="TPago">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nroBoleta" Type="System.String" DbType="VarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="rucIE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="concepto" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="monto" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Association Name="TPago_TMatricula" Member="TMatricula" ThisKey="id" OtherKey="idpago" Type="TMatricula" />
+      <Association Name="TPago_TMensualidad" Member="TMensualidad" ThisKey="id" OtherKey="idPago" Type="TMensualidad" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TPersonal" Member="TPersonal">
+    <Type Name="TPersonal">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="apellido" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="foto" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="fechaNacimiento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="tipoDocumento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="institucioneducativa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nroDocumento" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="direccion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="celular" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tipoPersonal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="TPersonal_TAula" Member="TAula" ThisKey="id" OtherKey="idDocente" Type="TAula" />
+      <Association Name="TPersonal_TUsuario" Member="TUsuario" ThisKey="id" OtherKey="personal" Type="TUsuario" />
+      <Association Name="TInstitucionEducativa_TPersonal" Member="TInstitucionEducativa" ThisKey="institucioneducativa" OtherKey="id" Type="TInstitucionEducativa" IsForeignKey="true" />
+      <Association Name="TipoDocumento_TPersonal" Member="TipoDocumento1" ThisKey="tipoDocumento" OtherKey="id" Type="TipoDocumento" IsForeignKey="true" />
+      <Association Name="TipoPersonal_TPersonal" Member="TipoPersonal1" ThisKey="tipoPersonal" OtherKey="id" Type="TipoPersonal" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TPrivilegio" Member="TPrivilegio">
+    <Type Name="TPrivilegio">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="TPrivilegio_TUsuario" Member="TUsuario" ThisKey="id" OtherKey="privilegio" Type="TUsuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TResponsable" Member="TResponsable">
+    <Type Name="TResponsable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="apellido" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tipoDocumento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nroDocumento" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_Nacimiento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="direccion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="celular" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ocupacion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tipoPersona" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="TResponsable_TAlumno" Member="TAlumno" ThisKey="id" OtherKey="idResponsable" Type="TAlumno" />
+      <Association Name="TipoDocumento_TResponsable" Member="TipoDocumento1" ThisKey="tipoDocumento" OtherKey="id" Type="TipoDocumento" IsForeignKey="true" />
+      <Association Name="TipoPersona_TResponsable" Member="TipoPersona1" ThisKey="tipoPersona" OtherKey="id" Type="TipoPersona" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TUsuario" Member="TUsuario">
+    <Type Name="TUsuario">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="usuario" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="contrasenia" Type="System.Data.Linq.Binary" DbType="VarBinary(500) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="personal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="privilegio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="TUsuario_TMatricula" Member="TMatricula" ThisKey="id" OtherKey="idUsuRes" Type="TMatricula" />
+      <Association Name="TPersonal_TUsuario" Member="TPersonal" ThisKey="personal" OtherKey="id" Type="TPersonal" IsForeignKey="true" />
+      <Association Name="TPrivilegio_TUsuario" Member="TPrivilegio" ThisKey="privilegio" OtherKey="id" Type="TPrivilegio" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

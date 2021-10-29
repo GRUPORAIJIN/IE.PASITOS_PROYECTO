@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.25, 15.125" name="Pasitos">
+  <DataContextMoniker Name="/PasitosDataContext" />
+  <nestedChildShapes>
+    <classShape Id="81be333b-a0e1-4d9c-9186-23886850d857" absoluteBounds="9.25, 7.875, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/PasitosDataContext/TAlumno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c7974be-f568-413b-bb36-c3864da6237c" absoluteBounds="9.265, 8.335, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7688f812-f5b3-442c-b8a9-5ab12b0cf91e" absoluteBounds="9.25, 5, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/PasitosDataContext/TAula" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da7a47ab-8bc4-431a-aa59-57f35f1bfd1a" absoluteBounds="9.265, 5.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d6abf4c4-e242-4447-959c-cfcda31c8228" absoluteBounds="3.75, 8.875, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/PasitosDataContext/TInstitucionEducativa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a00e2ddd-7681-4004-8cf3-010284459e1d" absoluteBounds="3.765, 9.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0bab27ec-ca32-4021-b6c0-201352903032" absoluteBounds="6.5, 8.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/PasitosDataContext/TipoAlumno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c766822-4314-40bb-834d-e788b280db9e" absoluteBounds="6.515, 8.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02d1b7f9-0417-48ba-a969-bccd4cd2aa87" absoluteBounds="0.75, 5.25, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/PasitosDataContext/TipoDocumento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="118ab751-9e9b-4b53-b795-087852060d14" absoluteBounds="0.765, 5.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f039b7b0-13f3-41bf-8380-c4582cdfba32" absoluteBounds="0.75, 3.25, 2, 1.193992513020834">
+      <DataClassMoniker Name="/PasitosDataContext/TipoPersona" />
+      <nestedChildShapes>
+        <elementListCompartment Id="55e9d1cc-e3d5-49de-b543-b65cee104640" absoluteBounds="0.765, 3.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1cf4fe8d-cb70-454b-9d38-3ded08fc6b64" absoluteBounds="3.75, 2, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/PasitosDataContext/TipoPersonal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="358dc4e6-166e-4c03-8bc7-19f831d71293" absoluteBounds="3.765, 2.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc506f6c-81e0-43a1-b76d-73eb9a2b5313" absoluteBounds="12, 4.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/PasitosDataContext/TMatricula" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e9c20f3-3e00-4044-88a8-6bf2fbece09a" absoluteBounds="12.015, 5.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82de19fa-46ea-4071-aa53-db0392163934" absoluteBounds="12, 13, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/PasitosDataContext/TMensualidad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2aaa985c-2d3b-4779-ac0b-70fa26f61c83" absoluteBounds="12.015, 13.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90db6954-f6fe-48e4-9c01-1b38af87fa8c" absoluteBounds="9.25, 12.875, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/PasitosDataContext/TPago" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a586616-8a5a-4c69-a7e0-2ee1413f48fe" absoluteBounds="9.265, 13.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d36e486-2e02-46b8-8e91-714c8f965ebc" absoluteBounds="6.5, 4.25, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/PasitosDataContext/TPersonal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6c0346e-a2d8-4cdd-b967-d67517f08fb9" absoluteBounds="6.515, 4.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26e65c06-d7de-42a9-9ac8-116ec35fac46" absoluteBounds="6.5, 2.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/PasitosDataContext/TPrivilegio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85fa7a49-40e9-45d2-96f5-dbf1617f22ed" absoluteBounds="6.515, 2.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46afb97c-f329-45ee-986d-220a3529036b" absoluteBounds="3.5, 4.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/PasitosDataContext/TResponsable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29a18c1b-5928-4ee4-9884-70d403abfd36" absoluteBounds="3.515, 4.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9aeb8dcb-289f-4d02-add5-ea5ac3cc36b5" absoluteBounds="9.25, 2, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/PasitosDataContext/TUsuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a6fbf3a-c9ca-4c49-9ecf-076e06d66f35" absoluteBounds="9.265, 2.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.5 : 8.84699625651042); (9.25 : 8.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TipoAlumno/TipoAlumno_TAlumno" />
+      <nodes>
+        <classShapeMoniker Id="0bab27ec-ca32-4021-b6c0-201352903032" />
+        <classShapeMoniker Id="81be333b-a0e1-4d9c-9186-23886850d857" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 9.81810628255208); (11.5416666666667 : 9.81810628255208 : JumpStart); (11.7083333333333 : 9.81810628255208 : JumpEnd); (13 : 9.81810628255208); (13 : 6.8381982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TAlumno/TAlumno_TMatricula" />
+      <nodes>
+        <classShapeMoniker Id="81be333b-a0e1-4d9c-9186-23886850d857" />
+        <classShapeMoniker Id="fc506f6c-81e0-43a1-b76d-73eb9a2b5313" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 5.88544840494792); (11.5416666666667 : 5.88544840494792 : JumpStart); (11.7083333333333 : 5.88544840494792 : JumpEnd); (12 : 5.88544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TAula/TAula_TMatricula" />
+      <nodes>
+        <classShapeMoniker Id="7688f812-f5b3-442c-b8a9-5ab12b0cf91e" />
+        <classShapeMoniker Id="fc506f6c-81e0-43a1-b76d-73eb9a2b5313" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 12.875); (11.625 : 12.5); (11.625 : 5.34897220247396); (12 : 5.34897220247396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TPago/TPago_TMatricula" />
+      <nodes>
+        <classShapeMoniker Id="90db6954-f6fe-48e4-9c01-1b38af87fa8c" />
+        <classShapeMoniker Id="fc506f6c-81e0-43a1-b76d-73eb9a2b5313" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 13.8854484049479); (12 : 13.8854484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TPago/TPago_TMensualidad" />
+      <nodes>
+        <classShapeMoniker Id="90db6954-f6fe-48e4-9c01-1b38af87fa8c" />
+        <classShapeMoniker Id="82de19fa-46ea-4071-aa53-db0392163934" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 5.88544840494792); (9.25 : 5.88544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TPersonal/TPersonal_TAula" />
+      <nodes>
+        <classShapeMoniker Id="9d36e486-2e02-46b8-8e91-714c8f965ebc" />
+        <classShapeMoniker Id="7688f812-f5b3-442c-b8a9-5ab12b0cf91e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.65625 : 8.875); (5.65625 : 4.34375); (6.5 : 4.34375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TInstitucionEducativa/TInstitucionEducativa_TPersonal" />
+      <nodes>
+        <classShapeMoniker Id="d6abf4c4-e242-4447-959c-cfcda31c8228" />
+        <classShapeMoniker Id="9d36e486-2e02-46b8-8e91-714c8f965ebc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 6.44399251302083); (1.75 : 7.33095540364583); (3.51041666666667 : 7.33095540364583 : JumpStart); (3.67708333333333 : 7.33095540364583 : JumpEnd); (5.57291666666667 : 7.33095540364583 : JumpStart); (5.73958333333333 : 7.33095540364583 : JumpEnd); (6.5 : 7.33095540364583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TipoDocumento/TipoDocumento_TPersonal" />
+      <nodes>
+        <classShapeMoniker Id="02d1b7f9-0417-48ba-a969-bccd4cd2aa87" />
+        <classShapeMoniker Id="9d36e486-2e02-46b8-8e91-714c8f965ebc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.703125 : 3.19399251302083); (5.703125 : 4.3124975); (6.5 : 4.3124975)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TipoPersonal/TipoPersonal_TPersonal" />
+      <nodes>
+        <classShapeMoniker Id="1cf4fe8d-cb70-454b-9d38-3ded08fc6b64" />
+        <classShapeMoniker Id="9d36e486-2e02-46b8-8e91-714c8f965ebc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.59375 : 7.23240397135417); (3.59375 : 11.2348046875); (9.25 : 11.2348046875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TResponsable/TResponsable_TAlumno" />
+      <nodes>
+        <classShapeMoniker Id="46afb97c-f329-45ee-986d-220a3529036b" />
+        <classShapeMoniker Id="81be333b-a0e1-4d9c-9186-23886850d857" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.84699625651042); (3.5 : 5.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TipoDocumento/TipoDocumento_TResponsable" />
+      <nodes>
+        <classShapeMoniker Id="02d1b7f9-0417-48ba-a969-bccd4cd2aa87" />
+        <classShapeMoniker Id="46afb97c-f329-45ee-986d-220a3529036b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.84699625651042); (4.5 : 3.84699625651042); (4.5 : 4.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TipoPersona/TipoPersona_TResponsable" />
+      <nodes>
+        <classShapeMoniker Id="f039b7b0-13f3-41bf-8380-c4582cdfba32" />
+        <classShapeMoniker Id="46afb97c-f329-45ee-986d-220a3529036b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 2.88544840494792); (13 : 2.88544840494792); (13 : 4.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TUsuario/TUsuario_TMatricula" />
+      <nodes>
+        <classShapeMoniker Id="9aeb8dcb-289f-4d02-add5-ea5ac3cc36b5" />
+        <classShapeMoniker Id="fc506f6c-81e0-43a1-b76d-73eb9a2b5313" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 4.25); (8.875 : 3.875); (8.875 : 4.14589680989583); (9.25 : 3.77089680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PasitosDataContext/TPersonal/TPersonal_TUsuario" />
+      <nodes>
+        <classShapeMoniker Id="9d36e486-2e02-46b8-8e91-714c8f965ebc" />
+        <classShapeMoniker Id="9aeb8dcb-289f-4d02-add5-ea5ac3cc36b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 2.84699625651042); (9.25 : 2.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PasitosDataContext/TPrivilegio/TPrivilegio_TUsuario" />
+      <nodes>
+        <classShapeMoniker Id="26e65c06-d7de-42a9-9ac8-116ec35fac46" />
+        <classShapeMoniker Id="9aeb8dcb-289f-4d02-add5-ea5ac3cc36b5" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
